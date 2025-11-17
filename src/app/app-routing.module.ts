@@ -18,7 +18,6 @@ const routes: Routes = [
   // Default route
   { path: '', redirectTo: 'stocks', pathMatch: 'full' },
 
-  // Wildcard route (optional for 404)
   { path: '**', redirectTo: 'stocks' }
 ];
 

@@ -7,9 +7,34 @@
   </div>
 
   <div>
-    <label>Price:</label>
-    <input type="number" [(ngModel)]="stock.price" name="price" required>
+    <label>Open Value:</label>
+    <input type="number" [(ngModel)]="stock.openValue" name="openValue" required>
   </div>
 
-  <button type="submit">Add</button>
+  <div>
+    <label>High Value:</label>
+    <input type="number" [(ngModel)]="stock.highValue" name="highValue" required>
+  </div>
+
+  <div>
+    <label>Low Value:</label>
+    <input type="number" [(ngModel)]="stock.lowValue" name="lowValue" required>
+  </div>
+
+  <div>
+    <label>Close Value:</label>
+    <input type="number" [(ngModel)]="stock.closeValue" name="closeValue" required>
+  </div>
+
+  <div>
+    <label>Volume:</label>
+    <input type="number" [(ngModel)]="stock.volume" name="volume" required>
+  </div>
+
+  <div>
+    <label>Date:</label>
+    <input type="datetime-local" [(ngModel)]="stock.date" name="date" required>
+  </div>
+
+  <button type="submit">Add Stock</button>
 </form>
