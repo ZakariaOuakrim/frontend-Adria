@@ -1,0 +1,28 @@
+<h2>Companies</h2>
+<a routerLink="/companies/add">Add Company</a>
+<table border="1" width="100%">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Domain</th>
+      <th>Stock Price</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let c of companies">
+      <td>{{ c.id }}</td>
+      <td>{{ c.name }}</td>
+      <td>{{ c.domain }}</td>
+      <td>{{ c.currentStockPrice }}</td>
+      <td>
+        <a [routerLink]="['/companies/edit', c.id]">Edit</a>
+        <button (click)="deleteCompany(c.id)">Delete</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<br>
+

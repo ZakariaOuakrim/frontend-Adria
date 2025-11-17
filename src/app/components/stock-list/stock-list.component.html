@@ -1,0 +1,37 @@
+<h2>Stock Markets</h2>
+
+<div style="margin-top: 20px;">
+  <a routerLink="/stocks/add" class="btn">Add Stock</a>
+  <a routerLink="/companies" class="btn" style="background: #16a085;">Manage Companies</a>
+</div>
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Company ID</th>
+      <th>Open</th>
+      <th>High</th>
+      <th>Low</th>
+      <th>Close</th>
+      <th>Volume</th>
+      <th>Date</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let s of stocks">
+      <td>{{ s.id }}</td>
+      <td>{{ s.companyId }}</td>
+      <td>{{ s.openValue }}</td>
+      <td>{{ s.highValue }}</td>
+      <td>{{ s.lowValue }}</td>
+      <td>{{ s.closeValue }}</td>
+      <td>{{ s.volume }}</td>
+      <td>{{ s.date | date:'short' }}</td>
+      <td>
+        <button (click)="deleteStock(s.id)">Delete</button>
+      </td>
+    </tr>
+  </tbody>
+</table>

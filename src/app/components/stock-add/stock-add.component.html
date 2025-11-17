@@ -1,0 +1,15 @@
+<h2>Add Stock</h2>
+
+<form (ngSubmit)="submitForm()">
+  <div>
+    <label>Company ID:</label>
+    <input type="number" [(ngModel)]="stock.companyId" name="companyId" required>
+  </div>
+
+  <div>
+    <label>Price:</label>
+    <input type="number" [(ngModel)]="stock.price" name="price" required>
+  </div>
+
+  <button type="submit">Add</button>
+</form>

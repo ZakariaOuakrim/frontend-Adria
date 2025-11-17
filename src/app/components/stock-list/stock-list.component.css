@@ -1,0 +1,63 @@
+/* Table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  border-radius: 8px;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+thead {
+  background: #2f80ed;
+  color: white;
+}
+
+th, td {
+  padding: 12px 15px;
+  text-align: left;
+}
+
+tbody tr:nth-child(even) {
+  background: #f0f4ff;
+}
+
+tbody tr:hover {
+  background: #e8f0fe;
+}
+
+/* Delete button inside table */
+button {
+  background: #e63946;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #c92735;
+}
+
+/* Top buttons (Add / Manage Companies) */
+.btn {
+  display: inline-block;
+  padding: 10px 16px;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 500;
+  margin-right: 10px;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  opacity: 0.85;
+}
+
+.btn:first-child {
+  background: #2f80ed; /* Add Stock button */
+}

@@ -1,0 +1,20 @@
+<h2>Edit Company</h2>
+
+<form (ngSubmit)="submitForm()">
+  <div>
+    <label>Name:</label>
+    <input type="text" [(ngModel)]="company.name" name="name" required>
+  </div>
+
+  <div>
+    <label>Domain:</label>
+    <input type="text" [(ngModel)]="company.domain" name="domain" required>
+  </div>
+
+  <div>
+    <label>Stock Price:</label>
+    <input type="number" [(ngModel)]="company.currentStockPrice" name="price" required>
+  </div>
+
+  <button type="submit">Update</button>
+</form>
